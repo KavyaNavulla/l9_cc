@@ -1,0 +1,12 @@
+import unittest
+from app import add
+
+class TestApp(unittest.Testcase):
+    def test_add(self):
+        self.assertEqual(add(2,3),5)
+        self.assertEqual(add(5,5),10)
+        self.assertEqual(add(4,3),7)
+        self.assertEqual(add(12,8),20)
+
+if __name__ == "__main__":
+    unittest.main()
